@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#professional{
+    font-family: cursive;
+    background-color: #5d67e9;
+    border: 2px solid;
+    border-radius: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+    border-bottom: 2px solid #333;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.stats {
+    display: flex;
+}
+
+.stats div {
+    margin-left: 40px;
+}
+
+.stars {
+    color: gold;
+}
+
+.navbar {
+    background-color: #202020;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar a.active{
+    color: lightblue;
+}
+.navbar a:hover {
+    color: #5d67e9;
+}
+
+.feedback-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feedback-card {
+    background-color: #1e1e1e;
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feedback-card:hover {
+    transform: scale(1.05);
+}
+
+.stars {
+    color: #ffdf00; /* Gold color for stars */
+    font-size: 1.5rem;
+}
+
+.date {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: #888;
+}
+
+.text {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.verified {
+    font-size: 0.9rem;
+    color: #4caf50; /* Green color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.checkmark {
+    width: 12px;
+    height: 12px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7289da;
+    cursor: pointer;
+}
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7289da;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+.floating-button img:hover {
+    transform: scale(1.2); /* Increases size by 20% on hover */
+}
+
+
+.language-select {
+    position: relative; /* Changed to relative to anchor the dropdown */
+    cursor: pointer;
+    width: 150px;
+}
+
+.selected-language {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.selected-language img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #292929;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 100;
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto;  /* Allows vertical scrolling if content exceeds max-height */
+}
+
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+}
+
+.option img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.option:hover {
+    background-color: #5d67e9;
+}
+
+/* Hover effects for displaying the dropdown */
+.selected-language:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}

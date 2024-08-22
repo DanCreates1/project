@@ -1,0 +1,228 @@
+/* Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#professional{
+    font-family: cursive;
+    background-color: #5d67e9;
+    border: 2px solid;
+    border-radius: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+    border-bottom: 2px solid #333;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.stats {
+    display: flex;
+}
+
+.stats div {
+    margin-left: 40px;
+}
+
+.stars {
+    color: gold;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #202020;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar a.active {
+    color: lightblue;
+}
+
+.navbar a:hover {
+    color: #5d67e9;
+}
+
+/* Contact form styling */
+.contact-form {
+    background-color: #1C1C1C;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    border: 1px solid #444;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #2C2C2C;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6960EC;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #584BD2;
+}
+
+/* Floating button styling */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7289da;
+    cursor: pointer;
+}
+
+
+/* Floating button styling */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden; /* Prevents the scrollbar on hover */
+}
+
+.floating-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7289da;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-button img:hover {
+    transform: scale(1.2); /* Increases size by 20% on hover */
+}
+
+
+
+.language-select {
+    position: relative; /* Changed to relative to anchor the dropdown */
+    cursor: pointer;
+    width: 150px;
+}
+
+.selected-language {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.selected-language img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #292929;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 100;
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto;  /* Allows vertical scrolling if content exceeds max-height */
+}
+
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+}
+
+.option img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.option:hover {
+    background-color: #5d67e9;
+}
+
+/* Hover effects for displaying the dropdown */
+.selected-language:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}

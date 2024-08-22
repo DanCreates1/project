@@ -1,0 +1,202 @@
+body {
+    background-color: #131313;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#professional{
+    font-family: cursive;
+    background-color: #5d67e9;
+    border: 2px solid;
+    border-radius: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+    border-bottom: 2px solid #333;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.stats {
+    display: flex;
+}
+
+.stats div {
+    margin-left: 40px;
+}
+
+.stars {
+    color: gold;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #5d67e9;
+}
+
+.faq-section {
+    margin: 20px;
+    line-height: 100px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.faq-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7289da;
+    cursor: pointer;
+}
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7289da;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+.floating-button img:hover {
+    transform: scale(1.2); /* Increases size by 20% on hover */
+}
+
+.language-select {
+    position: relative; /* Changed to relative to anchor the dropdown */
+    cursor: pointer;
+    width: 150px;
+}
+
+.selected-language {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.selected-language img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #292929;
+    position: absolute; /* Ensures the dropdown is positioned correctly */
+    top: 100%; /* Positioned directly below the selected language */
+    right: 0;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+}
+
+.option img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.option:hover {
+    background-color: #5d67e9;
+}
+
+/* Hover effects for displaying the dropdown */
+.selected-language:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}

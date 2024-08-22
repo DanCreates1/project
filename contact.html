@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Tokens</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+   
+    <header class="header">
+      <div>
+        <img src="logo.png" alt="" />
+      </div>
+      <!-- Language Dropdown -->
+      <div class="language-select">
+        <div class="selected-language">
+          <img src="english.png" alt="English Flag" class="flag" />
+          <span>English</span>
+        </div>
+        
+        
+      </div>
+    </header>
+      
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">F.A.Q</a></li>
+        <li><a href="feedBack.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact-form">
+      <form action="#" method="post">
+        <label for="title">Title</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="e.g : Terms and Conditions for dropshipper"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+
+        <label for="invoice-id">Invoice Id (optional field)</label>
+        <input
+          type="text"
+          id="invoice-id"
+          name="invoice-id"
+          placeholder="Enter 12 digit invoice id"
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="What would you like to ask?"
+        ></textarea>
+
+        <button type="submit">Create ticket</button>
+      </form>
+    </section>
+
+    <div class="floating-button">
+      <img src="discord-icon.png" alt="Discord" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

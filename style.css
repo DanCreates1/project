@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#professional{
+    font-family: cursive;
+    background-color: #5d67e9;
+    border: 2px solid;
+    border-radius: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+    border-bottom: 2px solid #333;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.stats {
+    display: flex;
+}
+
+.stats div {
+    margin-left: 40px;
+}
+
+.stars {
+    color: gold;
+}
+
+.navbar {
+    background-color: #202020;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #5d67e9;
+}
+
+/* Product Cards Section */
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    padding: 40px;
+}
+
+.product-card {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.product-card .card-image {
+    height: 150px;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-size: contain; /* Ensures the whole image is visible */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+.telegram {
+    background-image: url('telegram-icon.png');
+}
+
+.discord {
+    background-image: url('discord-icon.png');
+}
+
+.software {
+    background-image: url('');
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7289da;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-button img:hover {
+    transform: scale(1.2);
+}
+
+.language-select {
+    position: relative; /* Changed to relative to anchor the dropdown */
+    cursor: pointer;
+    width: 150px;
+}
+
+.selected-language {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.selected-language img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    display: none;
+    background-color: #292929;
+    position: absolute; /* Ensures the dropdown is positioned correctly */
+    top: 100%; /* Positioned directly below the selected language */
+    right: 0;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #292929;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+}
+
+.option img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.option:hover {
+    background-color: #5d67e9;
+}
+
+/* Hover effects for displaying the dropdown */
+.selected-language:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}
+
+/* Global style for all links within product cards */
+.products a {
+    text-decoration: none;  /* Removes underline */
+    color: inherit;         /* Inherits the color from the parent element */
+}
+
+/* Optional: Add hover effect */
+.products a:hover {
+    color: #5d67e9;         /* Change the color on hover, if desired */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%; /* Make cards wider on smaller screens */
+        margin: 20px 0;
+    }
+}
